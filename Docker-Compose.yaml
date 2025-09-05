@@ -2,7 +2,8 @@
 
 services:
   postgres:
-    image: postgres-demo:latest
+    #image: postgres-demo:latest
+    image: public.ecr.aws/i0v0m7z7/class06/postgresql-demo:latest
     volumes:
     - postgres_data:/var/lib/postgresql/data
     environment:
@@ -12,7 +13,8 @@ services:
     ports:
     - "5432:5432"
   keycloak:
-    image: keycloak-demo:latest
+    #image: keycloak-demo:latest
+    image: public.ecr.aws/i0v0m7z7/class06/kc-demo:latest
     command: start-dev
     environment:
       KC_DB: postgres
