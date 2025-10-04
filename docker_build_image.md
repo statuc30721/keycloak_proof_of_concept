@@ -18,7 +18,7 @@ Your output should be similar to below in the column titled PLATFORMS
 
 "linux/amd64 (+2), linux/arm64, linux/arm (+2), linux/ppc64le, (3 more)"
 
-3. Download the desired continer images (or build from source).
+3. Download the desired container images (or build from source).
 
 ```
 docker pull <insert image name>
